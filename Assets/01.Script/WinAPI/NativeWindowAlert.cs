@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 public static class NativeWindowAlert
 {
     [DllImport("user32.dll")]
-    private static extern int MessageBoxW(IntPtr hWnd, IntPtr lpText, IntPtr lpCaption, uint flag);
+    private static extern int MessageBoxW(int hWnd, IntPtr lpText, IntPtr lpCaption, uint flag);
     
     public static int ShowMessageBox(string message, string title, uint flag)
     {
