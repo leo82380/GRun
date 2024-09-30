@@ -32,8 +32,8 @@ public class DirectorySetting : MonoBehaviour
             {
                 GameObject gm = Instantiate(filePrefab, transform);
                 FileInfo info = new FileInfo(file);
-                gm.transform.GetComponent<FileData>().name = info.Name;
-                gm.transform.GetComponent<FileData>().bytes = info.Length/1024;
+                gm.transform.GetComponent<FileDatas>().name = info.Name;
+                gm.transform.GetComponent<FileDatas>().bytes = info.Length/1024;
                 gm.transform.Find("FileName").GetComponent<TextMeshProUGUI>().text = info.Name;
                 gm.transform.Find("FileSize").GetComponent<TextMeshProUGUI>().text =(info.Length/1024)+"KB";
             }

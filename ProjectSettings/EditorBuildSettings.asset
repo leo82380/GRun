@@ -102,4 +102,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00.Scenes/JSY.unity
     guid: 4a2a93db93c2a8b4aa22d697a0252aac
+  - enabled: 1
+    path: Assets/00.Scenes/FightScene.unity
+    guid: ae0848399f91594439c3bffb3e1d5fc3
+  - enabled: 1
+    path: Assets/00.Scenes/RunScene.unity
+    guid: 810260fb4cdd80e44b10676b753ae967
   m_configObjects: {}

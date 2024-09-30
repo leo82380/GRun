@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class FileData : MonoBehaviour, IPointerClickHandler
+public class FileDatas : MonoBehaviour, IPointerClickHandler
 {
     public string name;
     public long bytes;
     public void OnPointerClick(PointerEventData eventData)
     {
         print(name + bytes);
-        //do damage
+        Enemy._instance.GoBack(Mathf.Log(bytes, 100));
         Destroy(gameObject);
     }
 }
